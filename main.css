@@ -15,7 +15,14 @@
   overflow: auto;
 }
 #header ul .glyphicon {
-  font-size: 20px;
+  font-size: 15px;
+}
+#facebook{
+  font-size:35px;
+  margin-top:-5px;
+  margin-left:15px;
+  margin-right:0px;
+
 }
 .white-text {
   color: white !important;
@@ -58,6 +65,7 @@ p {
 }
 .panel-footer {
   color: black;
+  background-color:rgba(231, 233, 233, 1);
 }
 .panel-body {
 
@@ -140,7 +148,10 @@ p {
 }
 #search {
   border-radius: 0px;
-  margin-left: -40px;
+  margin-left:-40px;
+  height:33px;
+  margin-top: -2px;
+
 }
 .pic12 {
   height: 40px;
