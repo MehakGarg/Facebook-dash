@@ -4,15 +4,21 @@
 }
 #left {
   background-color: rgba(231, 233, 233, 1);
-  overflow: auto;
+  height: 600px;
 }
 #mid {
   background-color: rgba(231, 233, 233, 1);
   overflow: auto;
+  height: 600px;
 }
 #right {
   background-color: rgba(231, 233, 233, 1);
+  height: 600px;
   overflow: auto;
+}
+.right-sidebar{
+  background-color:blue;
+  color:white;
 }
 #header ul .glyphicon {
   font-size: 15px;
