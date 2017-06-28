@@ -329,7 +329,7 @@ any other head content must come *after* these tags -->
     </a>
   </div>
   <div class="media-body">
-    <h4 class="media-heading"><p class="comment"><a href="#">Mayank Garg</a>, This is Really Lovable.</p></h4><div>
+    <h4 class="media-heading"><p class="comment"><a href="#">Mayank Garg</a> This is Really Lovable.</p> <span><small>11:10PM</small></span></h4><div>
 
 	<span><small>
 	<span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
@@ -346,7 +346,7 @@ any other head content must come *after* these tags -->
   </a>
 </div>
 <div class="media-body">
-  <h4 class="media-heading"><p class="comment"><a href="#">MehakGarg</a>, Awesome.</p></h4><div>
+  <h4 class="media-heading"><p class="comment"><a href="#">MehakGarg</a>, Awesome.</p><span><small>12:10AM</small></span></h4><div>
 
 <span><small>
 <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
@@ -396,6 +396,48 @@ any other head content must come *after* these tags -->
 
 <div class="panel-footer"><input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;"></div>
 </div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a href="#">Wallpapers</a></h3>
+</div>
+
+<div class="panel-body"><div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="http://wallpapercave.com/wp/wp1979303.jpg" style="width:100%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="http://wallpapercave.com/wp/1CUZwju.gif" style="width:100%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="http://www.dhresource.com/260x260s/f2-albu-g5-M00-DB-41-rBVaJFkxrMOAUaWVAAIdZJj2S8Y070.jpg/wholesale-custom-3d-photo-wallpaper-cartoon.jpg" style="width:100%">
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+
+
+<div class="panel-footer"><input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;"></div>
+</div>
+
+
         </div><!--id main ends here-->
       </div>
 
@@ -403,7 +445,7 @@ any other head content must come *after* these tags -->
 
 <div class="hidden-xs hidden-sm col-md-3"><!--Third Column Start-->
         <div id="right">
-
+<div>
 
           <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#top" aria-controls="home" role="tab" data-toggle="tab"><span class="fa fa-line-chart" aria-hidden="true"></span></a></li>
@@ -422,6 +464,9 @@ any other head content must come *after* these tags -->
                   <div class="right-sidebar">China lodges protest with India alleging its troops ‘crossed boundary’ in Sikkim</div><br>
                   <div class="right-sidebar">Modi, Trump reaffirm cooperation, see China as common challenge</div><br>
                   <div class="right-sidebar">India’s poor are not using LPG cylinders they got under Ujjwala scheme</div><br></div>
+
+</div>
+
 
 
 </div>
@@ -468,5 +513,22 @@ any other head content must come *after* these tags -->
 
   <script src="js/bootstrap.min.js">
   </script>
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
 </body><!--End Of Body-->
 </html>
