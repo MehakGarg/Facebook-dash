@@ -1,50 +1,69 @@
+body {
+  padding-top: 70px;
+  overflow: -moz-scrollbars-vertical;
+
+}
 #header {
   background-color: #4267b2;
   color: white;
 }
 #left {
-  background-color: rgba(231, 233, 233, 1);
   height: 600px;
+}
+#bday {
+  border: 1px solid grey;
 }
 #mid {
-  background-color: rgba(231, 233, 233, 1);
   overflow: auto;
   height: 600px;
+}
+#mid::-webkit-scrollbar {
+  display: none;
 }
 #right {
-  background-color: rgba(231, 233, 233, 1);
   height: 600px;
-  overflow: auto;
+  overflow: hidden;
+  text-align: center;
 }
-.right-sidebar{
-  background-color:blue;
-  color:white;
+.right-sidebar {
+  color: black;
+
 }
 #header ul .glyphicon {
   font-size: 15px;
 }
-#facebook{
-  font-size:35px;
-  margin-top:-5px;
-  margin-left:15px;
-  margin-right:0px;
-
+#facebook {
+  font-size: 35px;
+  margin-top: -5px;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+#pic15 {
+  margin-left: -200px;
+}
+#content {
+  margin-left: 50px text-align: center;
+}
+#cake {
+  padding-left: 150px;
+}
+* {
+  box-sizing: border-box
 }
 
-* {box-sizing:border-box}
-
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -60,17 +79,20 @@
 }
 
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -82,6 +104,7 @@
 }
 
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -91,8 +114,9 @@
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
-  cursor:pointer;
+  cursor: pointer;
   height: 13px;
   width: 13px;
   margin: 0 2px;
@@ -101,53 +125,57 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
-
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 .white-text {
   color: white !important;
 }
 p {
-	margin: 0 0 10px;
+  margin: 0 0 10px;
 }
 .comment {
-    margin: 0;
+  margin: 0;
 }
 .text-post {
-    margin-bottom: 15px;
-    margin-top: 0;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 .image-post {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .btn {
   border-radius: 50px;
   width: auto;
   color: black;
-  padding:10px;
-  margin-top:5px;
+  padding: 10px;
+  margin-top: 5px;
 }
-
-
 .pull-right {
   float: right!important;
 }
@@ -166,7 +194,7 @@ p {
 }
 .panel-footer {
   color: black;
-  background-color:rgba(231, 233, 233, 1);
+  background-color: rgba(231, 233, 233, 1);
 }
 .panel-body {
 
@@ -249,10 +277,9 @@ p {
 }
 #search {
   border-radius: 0px;
-  margin-left:-40px;
-  height:33px;
+  margin-left: -40px;
+  height: 33px;
   margin-top: -2px;
-
 }
 .pic12 {
   height: 40px;
@@ -268,14 +295,15 @@ p {
   display: inline-block;
 }
 .pic14 {
-
   padding: 10px 15px 10 15;
   margin-right: 10px;
   display: inline-block;
   margin-left: 10px;
   position: absolute;
 }
-
 .active, .dot:hover {
-    background-color: lightgray !important;
+  background-color: white !important;
+}
+a {
+  color: black;
 }
